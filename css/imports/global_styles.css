@@ -1,0 +1,145 @@
+:root {
+  --black: #0C151C;
+  --white: #EDEDED;
+  /*index*/
+  --blue-gradient: linear-gradient(#E7F1FF, #8AB7EB, #53a0f8);
+  --bg-blue: #002e6b;
+  /*explore*/
+  --purple-gradient: linear-gradient(#FBECFF, #E066FF);
+  --bg-purple: #54026d;
+  /*exhibition spaces*/
+  --light-grey: #f3f3f3;
+  --bg-cosmo: #F1DBF8;
+  --bg-evo: #FFE4C5;
+  --bg-biomed: #E0EBF9;
+  --bg-robot: #FFE1E1;
+  --bg-eco: #C6FFBB;
+  /*events and exhibitions*/
+  --yellow-gradient: linear-gradient(#FFF9E1, #E0D5A9, #C29B00);
+  --bg-yellow: #fce071;
+  /*visit, get involved*/
+  --bg-pink: #FAF0FD;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+header img:first-of-type {
+  border-radius: 0px;
+}
+
+body * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.fa-bars, #hamburger-menu,
+.search .search-icon-check,
+nav .contact-nav-sm {
+  display: none;
+}
+
+.button {
+  background-color: var(--white);
+  padding: 10px 33px;
+  font-size: 1.2em;
+  border: 2px solid var(--black);
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: var(--bg-yellow);
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/*header, nav*/
+header section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+header img {
+  max-width: 180px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  align-self: center;
+}
+
+.search * {
+  color: var(--black);
+}
+
+.search .bar {
+  height: 1.5em;
+  width: 180px;
+  margin-right: 5px;
+  border: 2px solid;
+  padding-left: 3px;
+  border-radius: 3px;
+}
+
+nav ul {
+  text-align: center;
+  border-top: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
+  padding: 5px 10px;
+}
+
+nav li, .middle li {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 30px;
+  font-size: 1.1em;
+}
+
+nav li:last-of-type {
+  margin-right: 0px;
+}
+
+/*footer*/
+footer {
+  padding-top: 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 20px 20px 20px;
+}
+
+.left, .middle, .right {
+  justify-self: center;
+}
+
+.copy {
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 0.8em;
+}
+
+.middle div {
+  margin-top: 15px;
+}
+
+.left .hours, .middle .involve, .right .follow {
+  margin-bottom: 5px;
+}

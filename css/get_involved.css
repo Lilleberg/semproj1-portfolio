@@ -1,0 +1,52 @@
+@import "imports/typography.css";
+@import "imports/global_styles.css";
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  background-color: var(--bg-pink);
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+  margin: 0px;
+}
+
+main {
+  padding: 0px 150px 50px 150px;
+}
+
+.p1 {
+  margin: 10px 0px 20px 0px;
+}
+
+h2:nth-child(1), h2:nth-child(2) {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    padding: 0px 20px 30px 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    padding: 0px 20px 30px 20px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+}

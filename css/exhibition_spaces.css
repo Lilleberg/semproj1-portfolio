@@ -1,0 +1,147 @@
+@import "imports/typography.css";
+@import "imports/global_styles.css";
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  background-color: var(--light-grey);
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+  margin: 0px;
+}
+
+main img {
+  max-width: 200px;
+  border-radius: 0px;
+  display: block;
+  margin: 20px auto;
+}
+
+.cosmology img {
+  max-width: 500px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  padding: 0px 50px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0px;
+  grid-column: -1 / 1;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+main section {
+  padding: 40px 60px;
+  border-radius: 40px;
+  margin-bottom: 50px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.ecology {
+  background-color: var(--bg-eco);
+  box-shadow: 5px 5px 15px #80A288;
+}
+
+.robotics {
+  background-color: var(--bg-robot);
+  box-shadow: 5px 5px 15px #B09D8F;
+}
+
+.cosmology {
+  background-color: var(--bg-cosmo);
+  box-shadow: 5px 5px 15px #BEB1C3;
+}
+
+.evolution {
+  background-color: var(--bg-evo);
+  box-shadow: 5px 5px 15px #AFA799;
+}
+
+.biomed {
+  background-color: var(--bg-biomed);
+  box-shadow: 5px 5px 15px #99A8BC;
+}
+
+.p1, .p2 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  
+  main section {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+  main {
+    padding: 20px 20px 0px 20px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  
+  main section {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  main img {
+    max-width: 150px;
+  }
+  
+  .cosmology img {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    padding: 0px;
+  }
+
+  main div section {
+    max-width: 100%;
+    margin: 15px 15px 30px 15px;
+    border-radius: 15px;
+    padding: 15px 15px 20px 15px;
+  }
+
+  .ecology {
+    margin-top: 0px;
+  }
+
+  .cosmology img {
+    max-width: 280px;
+  }
+}

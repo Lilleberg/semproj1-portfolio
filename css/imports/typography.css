@@ -1,0 +1,39 @@
+body {
+  font-family: "Montserrat", "verdana", "sans-serif";
+  color: #0C151C;
+  font-size: 1em;
+}
+
+.button, h1, h2, h3,
+.left .hours, .middle .contact,
+.middle .involve, .follow {
+  font-family: "Blinker", "verdana", "sans-serif";
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p, a, .bar {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #0C151C;
+  line-height: 1.8em;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+.left .hours, .middle .contact,
+.middle .involve, .follow {
+  font-size: 1.5em;
+}
+
+.fa-search {
+  font-size: 1.2em;
+}

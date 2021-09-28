@@ -1,0 +1,200 @@
+@import "imports/typography.css";
+@import "imports/global_styles.css";
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  background-image: var(--purple-gradient);
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+  margin: 0px;
+}
+
+main p {
+  color: var(--white);
+}
+
+.active {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.kids, .teachers, .researchers {
+  background-color: var(--bg-purple);
+  padding: 40px 60px;
+  max-width: 75%;
+  margin: auto;
+  border-radius: 40px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 15px #55036E;
+}
+
+.for-kids a:first-of-type,
+.for-teachers p,
+.for-researchers a:last-of-type {
+  margin: 0px 40px;
+}
+
+.for-kids, .for-teachers, .for-researchers {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.for-kids p, .for-teachers p, .for-researchers p {
+  color: var(--black);
+}
+
+.p1 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.p2-section{
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.p2-section img {
+  justify-self: center;
+  max-width: 200px;
+}
+
+.p3, .p4 {
+  margin: auto;
+  max-width: 80%;
+}
+
+.img-lab {
+  display: block;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.button-contact {
+  text-align: center;
+}
+
+.image-line {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin: 50px 0px;
+}
+
+main img {
+  border: 2px solid var(--black);
+}
+
+.image-line img {
+  max-width: 230px;
+}
+
+.teachers p:first-of-type {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .image-line img {
+    max-width: 200px;
+  }
+
+  .p2-section img {
+    max-width: 170px;
+  }
+
+  .img-lab {
+    max-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    padding-bottom: 30px;
+  }
+
+  .for-teachers, .for-researchers {
+    margin-top: 40px;
+  }
+  .kids, .teachers, .researchers {
+    padding: 20px;
+    margin: 20px;
+    max-width: 100%;
+  }
+
+  .p1 {
+    margin-bottom: 50px;
+  }
+
+  .p2-section {
+    grid-template-columns: 1fr;
+  }
+
+  .p2-section img {
+    max-width: 170px;
+    margin-top: 20px;
+  }
+
+  .p3, .p4 {
+    max-width: 100%;
+  }
+
+  .image-line {
+    margin: 30px 0px;
+  }
+
+  .image-line img:nth-child(2) {
+    display: none;
+  }
+
+  .image-line {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-line img {
+    max-width: 160px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .kids, .teachers, .researchers {
+    max-width: 100%;
+    margin: 0px 15px 30px 15px;
+    border-radius: 15px;
+    padding: 15px 15px 20px 15px;
+  }
+
+  .for-kids, .for-teachers, .for-researchers {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+  }
+
+  .image-line img {
+    max-width: 130px;
+  }
+
+  .for-kids a:first-of-type,
+  .for-teachers p,
+  .for-researchers a:last-of-type {
+  margin: 0px 20px;
+  }
+
+  .p2-section img {
+    max-width: 140px;
+  }
+}
