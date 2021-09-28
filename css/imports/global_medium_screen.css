@@ -28,12 +28,6 @@
     max-width: 150px;
   }
 
-  .search {
-    position: absolute;
-    right: 20px;
-    top: 90px;
-  }
-
   nav .contact-nav-sm {
     display: block;
   }

@@ -5,19 +5,19 @@
   --bg-blue: #c8e1fd;
   /*explore*/
   --purple-box: #54026d;
-  --bg-purple: #e58fff;
+  --bg-purple: #f2c7ff;
   /*exhibition spaces*/
-  --light-grey: #f3f3f3;
+  --light-grey: #e9e9e9;
   --bg-cosmo: #F1DBF8;
   --bg-evo: #FFE4C5;
   --bg-biomed: #E0EBF9;
   --bg-robot: #FFE1E1;
   --bg-eco: #C6FFBB;
   /*events and exhibitions*/
-  --yellow-gradient: linear-gradient(#FFF9E1, #E0D5A9, #C29B00);
-  --bg-yellow: #fce071;
+  --yellow-box: #ffe16a;
+  --bg-yellow: #fdf2c6;
   /*visit, get involved*/
-  --bg-pink: #FAF0FD;
+  --bg-pink: #f5dcfd;
 }
 
 img {
@@ -35,69 +35,44 @@ body * {
 }
 
 .fa-bars, #hamburger-menu,
-.search .search-icon-check,
-nav .contact-nav-sm {
+nav .nav-contact {
   display: none;
 }
 
 .button {
-  background-color: var(--white);
+  background-color: var(--purple-box);
+  color: #fff;
   padding: 10px 33px;
-  font-size: 1.2em;
-  border: 2px solid var(--black);
+  font-size: 1.3em;
   border-radius: 50px;
   text-transform: uppercase;
 }
 
 .button:hover {
-  background-color: var(--bg-yellow);
+  background-color: var(--bg-pink);
 }
 
 h1 {
   text-align: center;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 .active {
-  text-decoration: underline;
+  border-radius: 20px 20px 0 0;
 }
 
 /*header, nav*/
-header section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 15px;
+header nav {
+  margin: 0 auto;
 }
 
 header img {
   max-width: 180px;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  justify-self: end;
-  align-self: center;
-}
-
-.search * {
-  color: var(--black);
-}
-
-.search .bar {
-  height: 1.5em;
-  width: 180px;
-  margin-right: 5px;
-  border: 2px solid;
-  padding-left: 3px;
-  border-radius: 3px;
+  margin: 2rem 0 20px 20px;
 }
 
 nav ul {
   text-align: center;
-  border-top: 2px solid var(--black);
-  border-bottom: 2px solid var(--black);
-  padding: 5px 10px;
 }
 
 nav li, .middle li {
@@ -106,12 +81,32 @@ nav li, .middle li {
 
 nav li {
   display: inline;
-  margin-right: 30px;
+  padding: 10px 20px;
   font-size: 1.1em;
 }
 
 nav li:last-of-type {
   margin-right: 0px;
+}
+
+.nav-home.active {
+  background-color: var(--bg-blue);
+}
+
+.nav-explore.active {
+  background-color: var(--bg-purple);
+}
+
+.nav-exhib-space.active {
+  background-color: var(--light-grey);
+}
+
+.nav-events.active {
+  background-color: var(--bg-yellow);
+}
+
+.nav-visit.active, .nav-get-involved.active {
+  background-color: var(--bg-pink);
 }
 
 /*footer*/

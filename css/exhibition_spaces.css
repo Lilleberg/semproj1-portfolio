@@ -42,8 +42,6 @@ main {
 }
 
 h1 {
-  text-align: center;
-  margin: 20px 0px;
   grid-column: -1 / 1;
 }
 

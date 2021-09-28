@@ -7,7 +7,7 @@ header {
 
 main {
   grid-area: main;
-  background-image: var(--yellow-gradient);
+  background: var(--bg-yellow);
 }
 
 footer {
@@ -24,7 +24,7 @@ body {
 }
 
 main section {
-  background-color: var(--bg-yellow);
+  background-color: var(--yellow-box);
   padding: 30px 60px;
   max-width: 60%;
   margin: auto;
@@ -44,10 +44,6 @@ h2 {
 main img {
   max-width: 250px;
   margin-right: 50px;
-}
-
-.event2 img, .exhib img {
-  border: 2px solid var(--black);
 }
 
 @media only screen and (max-width: 1300px) {

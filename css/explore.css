@@ -28,8 +28,7 @@ main p {
 }
 
 .active {
-  font-weight: 400;
-  text-decoration: underline;
+  font-weight: 500;
 }
 
 .kids, .teachers, .researchers {
@@ -96,10 +95,6 @@ main p {
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   margin: 50px 0px;
-}
-
-main img {
-  border: 2px solid var(--black);
 }
 
 .image-line img {
