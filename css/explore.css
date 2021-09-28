@@ -7,7 +7,7 @@ header {
 
 main {
   grid-area: main;
-  background-image: var(--purple-gradient);
+  background-color: var(--bg-purple);
 }
 
 footer {
@@ -33,9 +33,9 @@ main p {
 }
 
 .kids, .teachers, .researchers {
-  background-color: var(--bg-purple);
+  background-color: var(--purple-box);
   padding: 40px 60px;
-  max-width: 75%;
+  max-width: 60%;
   margin: auto;
   border-radius: 40px;
   margin-bottom: 50px;
@@ -61,6 +61,7 @@ main p {
 .p1 {
   text-align: center;
   margin-bottom: 70px;
+  font-size: 1.3rem;
 }
 
 .p2-section{

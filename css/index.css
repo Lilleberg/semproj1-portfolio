@@ -10,7 +10,7 @@ nav {
 }
 
 main {
-  background-image: var(--blue-gradient);
+  background-color: var(--bg-blue);
   grid-area: main;
 }
 

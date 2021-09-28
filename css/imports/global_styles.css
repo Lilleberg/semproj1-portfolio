@@ -2,11 +2,10 @@
   --black: #0C151C;
   --white: #EDEDED;
   /*index*/
-  --blue-gradient: linear-gradient(#E7F1FF, #8AB7EB, #53a0f8);
-  --bg-blue: #002e6b;
+  --bg-blue: #c8e1fd;
   /*explore*/
-  --purple-gradient: linear-gradient(#FBECFF, #E066FF);
-  --bg-purple: #54026d;
+  --purple-box: #54026d;
+  --bg-purple: #e58fff;
   /*exhibition spaces*/
   --light-grey: #f3f3f3;
   --bg-cosmo: #F1DBF8;
