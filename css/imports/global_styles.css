@@ -24,7 +24,15 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
+.hamb-menu, nav .nav-contact, .logo-smaller {
+  display: none;
+}
+
+.logo-desktop {
+  display: block;
+}
+
+main img {
   width: 100%;
   border-radius: 20px;
 }
@@ -36,11 +44,6 @@ header img:first-of-type {
 body * {
   margin: 0px;
   padding: 0px;
-}
-
-.hamb-menu,
-nav .nav-contact {
-  display: none;
 }
 
 .button, .hamb-menu {
@@ -75,7 +78,7 @@ header nav {
   z-index: 10;
 }
 
-header img {
+.logo-desktop {
   max-width: 180px;
   margin: 2rem 0 20px 20px;
 }
