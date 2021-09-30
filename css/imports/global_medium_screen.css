@@ -1,21 +1,32 @@
 @media only screen and (max-width: 900px) {
 
   /*header / nav*/
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    position: relative;
+  }
+
+  .hamb-menu {
+    border-style: none;
+    padding-right: 20px;
+  }
+
   nav, .bar {
     display: none;
   }
 
+  nav {
+    position: absolute;
+    top: 0; 
+  }
+
+  #hamburger-menu, nav .nav-contact {
+    display: block;
+  }
+
   .fa-bars {
-    display: block;
     margin: 0px 0px 5px 20px;
-    font-size: 1.2em;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-
-  h1 {
     font-size: 1.8em;
   }
 
@@ -28,23 +39,15 @@
     max-width: 150px;
   }
 
-  nav .contact-nav-sm {
-    display: block;
-  }
-
   nav ul {
     display: flex;
     flex-direction: column;
-    border: none;
-    padding: 10px 0px 0px 0px;
-    position: absolute;
     background-color: white;
-    width: 100%;
   }
 
   nav li {
     margin: 0px;
-    padding: 3px 0px;
+    padding: 5px 10px;
   }
 
   nav li:nth-child(odd) {
@@ -52,9 +55,12 @@
   }
 
   nav .active {
-    text-decoration: none;
+    border-radius: 0;
     font-weight: 600;
-    letter-spacing: 1px;
+  }
+
+  h1 {
+    font-size: 1.8em;
   }
 
   /*footer*/

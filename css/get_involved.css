@@ -24,7 +24,12 @@ body {
 }
 
 main {
-  padding: 0px 150px 50px 150px;
+  padding-bottom: 50px;
+}
+
+main section {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .p1 {
@@ -35,9 +40,21 @@ h2:nth-child(1), h2:nth-child(2) {
   margin-top: 30px;
 }
 
+@media only screen and (max-width: 1200px) {
+  main section {
+    width: 70%;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   main {
     padding: 0px 20px 30px 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main section {
+    width: 90%;
   }
 }
 

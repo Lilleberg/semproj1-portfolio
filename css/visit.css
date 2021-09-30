@@ -24,7 +24,7 @@ body {
 }
 
 main {
-  padding: 0px 100px 50px 100px;
+  padding-bottom: 50px;
 }
 
 /*top*/
@@ -32,17 +32,17 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 50px;
+  width: 70%;
+  margin: 0 auto;
 }
 
-h2, h3 {
+h2 {
   margin-bottom: 10px;
 }
 
 main .left-side img {
   max-width: 250px;
-  border: 2px solid var(--black);
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 main .hours {
@@ -116,7 +116,17 @@ textarea {
   padding-top: 5px;
 }
 
+@media only screen and (max-width: 1300px) {
+  .top {
+    width: 85%;
+  }
+}
+
 @media only screen and (max-width: 1150px) {
+  .top {
+    width: 95%;
+  }
+
   .left-contact, .right-contact {
     width: 300px;
   }

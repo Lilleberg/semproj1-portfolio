@@ -20,6 +20,10 @@
   --bg-pink: #f5dcfd;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
   border-radius: 20px;
@@ -34,14 +38,17 @@ body * {
   padding: 0px;
 }
 
-.fa-bars, #hamburger-menu,
+.hamb-menu,
 nav .nav-contact {
   display: none;
 }
 
+.button, .hamb-menu {
+  background-color: #fff;
+}
+
 .button {
-  background-color: var(--purple-box);
-  color: #fff;
+  border: 2px solid black;
   padding: 10px 33px;
   font-size: 1.3em;
   border-radius: 50px;
@@ -62,8 +69,10 @@ h1 {
 }
 
 /*header, nav*/
+
 header nav {
   margin: 0 auto;
+  z-index: 10;
 }
 
 header img {
@@ -87,26 +96,6 @@ nav li {
 
 nav li:last-of-type {
   margin-right: 0px;
-}
-
-.nav-home.active {
-  background-color: var(--bg-blue);
-}
-
-.nav-explore.active {
-  background-color: var(--bg-purple);
-}
-
-.nav-exhib-space.active {
-  background-color: var(--light-grey);
-}
-
-.nav-events.active {
-  background-color: var(--bg-yellow);
-}
-
-.nav-visit.active, .nav-get-involved.active {
-  background-color: var(--bg-pink);
 }
 
 /*footer*/
@@ -136,4 +125,26 @@ footer {
 
 .left .hours, .middle .involve, .right .follow {
   margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 901px) {
+  .nav-home.active {
+    background-color: var(--bg-blue);
+  }
+  
+  .nav-explore.active {
+    background-color: var(--bg-purple);
+  }
+  
+  .nav-exhib-space.active {
+    background-color: var(--light-grey);
+  }
+  
+  .nav-events.active {
+    background-color: var(--bg-yellow);
+  }
+  
+  .nav-visit.active, .nav-get-involved.active {
+    background-color: var(--bg-pink);
+  }
 }

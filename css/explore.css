@@ -31,6 +31,16 @@ main p {
   font-weight: 500;
 }
 
+h1 {
+ margin-bottom: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
 .kids, .teachers, .researchers {
   background-color: var(--purple-box);
   padding: 40px 60px;
@@ -47,10 +57,24 @@ main p {
   margin: 0px 40px;
 }
 
-.for-kids, .for-teachers, .for-researchers {
+/*Can't get this to work. Why?*/
+.scroll {
+  display: block;
+  overflow-y: scroll;
+}
+
+.scroll-to {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  gap: 30px;
+  font-size: 1.3rem;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: var(--bg-purple);
+  position: sticky;
+  top: 0;
+  border-top: 2px solid var(--purple-box);
+  border-bottom: 2px solid var(--purple-box);
 }
 
 .for-kids p, .for-teachers p, .for-researchers p {
@@ -105,6 +129,12 @@ main p {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 1400px) {
+  .kids, .researchers, .teachers {
+    max-width: 80%;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .image-line img {
     max-width: 200px;
@@ -127,6 +157,7 @@ main p {
   .for-teachers, .for-researchers {
     margin-top: 40px;
   }
+
   .kids, .teachers, .researchers {
     padding: 20px;
     margin: 20px;
@@ -175,9 +206,20 @@ main p {
     padding: 15px 15px 20px 15px;
   }
 
+  main h2 {
+    font-size: 1.2rem;
+  }
+
+   main p, .p1 {
+    font-size: 1rem;
+  }
+
+  .scroll-to {
+    font-size: 0.8rem;
+  }
+
   .for-kids, .for-teachers, .for-researchers {
     margin-bottom: 10px;
-    font-size: 0.8em;
   }
 
   .image-line img {
