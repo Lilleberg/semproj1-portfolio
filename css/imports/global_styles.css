@@ -69,18 +69,22 @@ h1 {
 
 /*header, nav*/
 
+header {
+  background-image: url("../../images/solarSystem.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: right 10px top 10px;
+  bac
+}
+
 header nav {
   margin: 0 auto;
   z-index: 10;
 }
 
-header div a {
-  margin: 0 auto;
-}
-
 .logo {
-  width: 30%;
-  padding: 20px;
+  width: 400px;
+  padding: 10px;
 }
 
 nav ul {

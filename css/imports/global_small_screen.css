@@ -1,11 +1,19 @@
 @media only screen and (max-width: 500px) {
-  .logo-smaller {
-    margin: 10px 10px;
-    width: 300px;
+  .logo {
+    width: 220px;
+    margin: 10px;
   }
 
   .navbar {
     width: 100%;
+  }
+
+  .fa-bars {
+    font-size: 1.2rem;
+  }
+
+  .fa-times {
+    font-size: 1.6rem;
   }
 
   /*footer*/
