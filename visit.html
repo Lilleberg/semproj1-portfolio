@@ -119,27 +119,48 @@
         </p>
       </section>
     </div>
+
     <section class="contact" id="contact">
-      <h1>Contact us</h1>
-      <form method="POST">
-        <div class="left-contact">
-          <label for="full-name">Full name</label>
-          <input type="text" name="full-name" id="full-name" required>
-          <label for="email">E-mail</label>
-          <input type="text" name="email" id="email" required>
-          <label for="phone">Phone number</label>
-          <input type="tel" name="phone" id="phone" required>
+      <h2 class="contact-heading">Contact us</h2>
+
+      <form id="form">
+        <div>
+          <label class="form-label">
+            <span>Name | min. 5 characters</span>
+            <input type="text" name="name" id="name">
+          </label>
+          <div class="form-error nameError">*Must be min. 5 characters
+          </div>
         </div>
-        <div class="right-contact">
-          <label for="subject">Subject</label>
-          <input type="text" name="subject" id="subject" required>
-          <label for="request">Request</label>
-          <textarea name="request" id="request" required></textarea>
+
+        <div>
+          <label class="form-label">
+            <span>Email address | 123@example.com</span>
+            <input type="email" name="email" id="email">
+          </label>
+          <div class="form-error emailError">*Please enter a valid email
+            address</div>
         </div>
+
+        <div>
+          <label class="form-label">
+            <span>Subject | min. 10 characters</span>
+            <input type="text" name="subject" id="subject">
+          </label>
+          <div class="form-error subjectError">*Must be min. 10 characters
+          </div>
+        </div>
+
+        <div>
+          <label class="form-label">
+            <span>Message | min. 15 characters</span>
+            <textarea name="message" id="message" rows="6"></textarea>
+          </label>
+          <div class="form-error messageError">*Must be min. 15 characters
+          </div>
+        </div>
+        <button type="submit" class="button submit" disabled>Send</button>
       </form>
-      <div class="button-submit">
-        <a href="visit.html" class="button">submit</a>
-      </div>
     </section>
 
   </main>
@@ -177,6 +198,7 @@
   </footer>
 
   <script src="js/global.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>

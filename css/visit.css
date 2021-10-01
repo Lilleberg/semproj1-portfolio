@@ -70,50 +70,49 @@ main .hours {
   height: -moz-fit-content;
 }
 
-/*bottom / contact*/
+/*bottom / contact form*/
 
-.button-submit {
+.contact {
+  display: grid;
+  justify-content: center;
+}
+
+.contact-heading {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
-form {
+.form-label {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
 }
 
-.left-contact, .right-contact {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 400px;
+input, textarea {
+  width: 25rem;
+  border: 2px solid var(--purple-box);
+  border-radius: 5px;
+  padding: 0 0 0 3px;
 }
 
-form input, #request {
-  border: 2px solid var(--black);
-  border-radius: 3px;
-  padding-left: 5px;
-  margin: 5px 0px 20px 0px;
-  font-size: 1em;
-  font-weight: 400;
-  font-family: 'montserrat', 'verdana';
+input {
+  height: 1.5rem;
 }
 
-form input {
-  height: 1.6em;
+span {
+  margin: 20px 0 3px 0;
 }
 
-.left-contact {
-  justify-self: end;
+.form-error {
+  color: rgb(145, 6, 6);
+  margin-top: 5px;
 }
 
-.right-contact {
-  height: max-content;
+.form-error, .submit {
+  font-weight: 500;
 }
 
-textarea {
-  height: 95px;
-  padding-top: 5px;
+.submit {
+  display: block;
+  margin: 30px auto 0 auto;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -125,14 +124,6 @@ textarea {
 @media only screen and (max-width: 1150px) {
   .top {
     width: 95%;
-  }
-
-  .left-contact, .right-contact {
-    width: 300px;
-  }
-
-  form {
-    grid-gap: 30px;
   }
 
   main {
@@ -147,7 +138,7 @@ textarea {
     height: 100%;
   }
 
-  .contact h1 {
+  .contact-heading {
     margin-top: 40px;
   }
 
@@ -186,21 +177,17 @@ textarea {
   main .left-side img {
     max-width: 150px;
   }
-
-  form {
-    grid-template-columns: 1fr;
-    gap: 0px;
-  }
-
-  .right-contact, .left-contact {
-    justify-self: center;
-  }
 }
 
 @media only screen and (max-width: 500px) {
-  h2, h3 {
+  input, textarea {
+    width: 100%;
+  }
+
+  h2 {
     font-size: 1.3em;
   }
+
   .left-side {
     grid-template-columns: 1fr;
     justify-items: start;
@@ -208,11 +195,7 @@ textarea {
     margin: auto;
   }
 
-  .left-contact, .right-contact {
-    width: 250px;
-  }
-
-  .contact label {
+  .contact label, form p, .requirement {
     font-size: 0.9em;
   }
 }

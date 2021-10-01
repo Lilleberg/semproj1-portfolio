@@ -20,11 +20,16 @@
   --bg-pink: #f5dcfd;
 }
 
+body * {
+  margin: 0px;
+  padding: 0px;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-.hamb-menu, nav .nav-contact, .logo-smaller {
+.hamb-menu, nav .nav-contact, .logo-smaller, .form-error {
   display: none;
 }
 
@@ -41,16 +46,11 @@ header img:first-of-type {
   border-radius: 0px;
 }
 
-body * {
-  margin: 0px;
-  padding: 0px;
-}
-
-.button, .hamb-menu {
+.button, .hamb-menu, .submit {
   background-color: #fff;
 }
 
-.button {
+.button, .submit {
   border: 2px solid black;
   padding: 10px 33px;
   font-size: 1.3em;
@@ -59,7 +59,7 @@ body * {
 }
 
 .button:hover {
-  background-color: var(--bg-pink);
+  background-color: var(--bg-purple);
 }
 
 h1 {
