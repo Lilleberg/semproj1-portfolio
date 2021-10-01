@@ -80,11 +80,6 @@
     justify-self: start;
   }
 
-  .left .hours, .middle .contact,
-  .middle .involve, .follow {
-    font-size: 1.4em;
-  }
-
   .middle ul a {
     font-size: 1em;
   }

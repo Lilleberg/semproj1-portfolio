@@ -5,6 +5,10 @@ header {
   grid-area: header;
 }
 
+nav {
+  grid-area: nav;
+}
+
 main {
   grid-area: main;
   background-color: var(--bg-pink);
@@ -18,6 +22,7 @@ body {
   display: grid;
   grid-template-areas:
   'header'
+  'nav'
   'main'
   'footer';
   margin: 0px;
