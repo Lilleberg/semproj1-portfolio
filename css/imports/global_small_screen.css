@@ -36,6 +36,10 @@
     margin-top: 5px;
   }
 
+  .footer-content h4 {
+    font-size: 1.3rem;
+  }
+
   .copy {
     margin: 25px 10px 10px 10px;
     font-size: 0.7em;
