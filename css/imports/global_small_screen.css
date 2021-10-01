@@ -1,7 +1,6 @@
 @media only screen and (max-width: 500px) {
   .logo {
     width: 220px;
-    margin: 10px;
   }
 
   .navbar {
@@ -14,6 +13,10 @@
 
   .fa-times {
     font-size: 1.6rem;
+  }
+
+  .navbar li {
+    font-size: 1rem;
   }
 
   /*footer*/
