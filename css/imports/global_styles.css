@@ -29,12 +29,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.hamb-menu, nav .nav-contact, .logo-smaller, .form-error {
+.hamb-menu, nav .nav-contact, .form-error {
   display: none;
-}
-
-.logo-desktop {
-  display: block;
 }
 
 main img {
@@ -78,9 +74,13 @@ header nav {
   z-index: 10;
 }
 
-.logo-desktop {
-  max-width: 180px;
-  margin: 2rem 0 20px 20px;
+header div a {
+  margin: 0 auto;
+}
+
+.logo {
+  width: 30%;
+  padding: 20px;
 }
 
 nav ul {
@@ -114,6 +114,11 @@ footer {
 
 .left, .middle, .right {
   justify-self: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
 }
 
 .copy {

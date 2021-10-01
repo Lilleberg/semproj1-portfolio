@@ -1,10 +1,10 @@
 @media only screen and (max-width: 900px) {
 
-  #hamburger-menu, nav .nav-contact, .logo-smaller {
+  #hamburger-menu, nav .nav-contact {
     display: block;
   }
 
-  nav, .bar, .logo-desktop {
+  nav, .bar {
     display: none;
   }
 
@@ -15,7 +15,7 @@
     position: relative;
   }
 
-  .logo-smaller {
+  .logo {
     width: 50%;
     margin: 20px auto;
   }

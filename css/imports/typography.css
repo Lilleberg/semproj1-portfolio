@@ -3,9 +3,7 @@ body, textarea, .form-error {
   font-size: 1em;
 }
 
-.button, h1, h2, h3,
-.left .hours, .middle .contact,
-.middle .involve, .follow {
+.button, h1, h2, h3, h4 {
   font-family: "Blinker", "verdana", "sans-serif";
 }
 
@@ -18,7 +16,7 @@ p, a, .bar, label span, input, textarea {
   font-size: 1.1em;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 500;
 }
 
@@ -26,8 +24,7 @@ h1, h2, h3 {
   font-size: 2rem;
 }
 
-.left .hours, .middle .contact,
-.middle .involve, .follow {
+h4 {
   font-size: 1.5em;
 }
 
