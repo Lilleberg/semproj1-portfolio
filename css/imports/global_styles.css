@@ -31,7 +31,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.hamb-menu, nav .nav-contact, .form-error {
+.hamb-menu, nav .nav-contact, .form-error, .scroll-images {
   display: none;
 }
 
@@ -49,8 +49,9 @@ header img:first-of-type {
 }
 
 .button, .submit {
-  border: 2px solid black;
-  padding: 10px 33px;
+  border: 1px solid var(--purple-box);
+  background-color: var(--bg-purple);
+  padding: 7px 20px;
   font-size: 1.3em;
   border-radius: 50px;
   text-transform: uppercase;

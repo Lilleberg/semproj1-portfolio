@@ -96,6 +96,7 @@ input, textarea {
   border: 2px solid var(--purple-box);
   border-radius: 5px;
   padding: 0 0 0 3px;
+  outline: none;
 }
 
 input {
