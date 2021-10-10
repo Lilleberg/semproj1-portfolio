@@ -1,4 +1,9 @@
 @media only screen and (max-width: 500px) {
+  h1 {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
   .logo {
     width: 90%;
   }
